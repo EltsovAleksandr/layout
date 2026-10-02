@@ -1,0 +1,76 @@
+/* * - это для всех тегов */
+/* # - это для id */
+/* . - это для класса */
+*{
+    /* внешний отступ */
+   margin: 0; 
+   /* внутренний отступ */
+   padding: 0;
+   /*   что бы не разьезжалась страница, решает 90% проблем с этим  */
+   box-sizing: border-box;
+}
+
+
+html, body{
+    /* высота */
+    height: 100%;
+}
+
+body{
+    /* включает flex */
+    display: flex;
+    /*  */
+    flex-direction: column;
+    min-height:100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #5bf560f3;
+    color: #333;
+}
+
+.header{
+    /* закрепляет блок */
+    position: sticky;
+    top:0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px;
+    background: #626ceff3; 
+    color: #fff;
+    /* тень X Y Z цвет прозрачность */
+    box-shadow: 20px 23px 26px rgb(0, 0, 0); 
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}
+.nav a{
+    color: black;
+    /* отменить декорации */
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.2s;
+}
+
+.context{
+    flex: 1;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.content h1{
+    margin-bottom: 15px;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background: #f61cc3;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
