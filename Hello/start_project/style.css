@@ -17,7 +17,7 @@ header{
     color:rgb(245, 148, 2);
     box-shadow: 0px 23px 20px rgb(236, 253, 1); 
 }
-h2{
+h2, h3{
     margin: 30px;
     font-family: Comic Sans MS, Comic Sans, cursive;
     color: rgb(245, 148, 2);
@@ -43,8 +43,25 @@ h2{
     transition: all 0.3s ease; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
     box-shadow: 0 2px 4px rgb(245, 148, 2);
 }
+.btn-link{
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    box-shadow: 0 2px 4px rgb(245, 148, 2);
+}
+.btn-link:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow: 10px 10px 20px rgb(236, 253, 1);
+    transform: translateY(-3px); Кнопка визуально приподнимается на 3 пикселя вверх 
+}
 /* Эффект при наведении курсора*/
-.menu a:hover{
+.menu a:hover, {
     background-color: rgb(245, 148, 2);
     color: #00674f;
     box-shadow: 10px 10px 20px rgb(236, 253, 1);
