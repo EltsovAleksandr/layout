@@ -16,5 +16,6 @@
   "editor.cursorBlinking": "blink",
   "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
-  "editor.minimap.enabled": false
+  "editor.minimap.enabled": false,
+  "python-envs.defaultEnvManager": "ms-python.python:system"
 }
