@@ -3,9 +3,7 @@
     padding:0;
     box-sizing: border-box;
 }
-html, body{
-    
-}
+
 header{
     position:relative;
     top: 0;
@@ -64,17 +62,16 @@ h2, h3{
     transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
 }
 /* Эффект при наведении курсора*/
-.menu a:hover, {
+.menu a:hover{
     background-color: rgb(245, 148, 2);
     color: #00674f;
     box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
-    transform: translateY(-3px); Кнопка визуально приподнимается на 3 пикселя вверх 
+    transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
 } 
 .menu nav{
     display: flex;
     align-items: center;
     gap: 3rem; /* Задаем одинаковое расстояние между заголовком и всеми ссылками */
-
 }
 .menu h1 {
     color:rgb(245, 148, 2);
@@ -224,7 +221,7 @@ body{
     
 }
 
-.product-card a, {
+.product-card a{
     margin-top: auto;
 }
 
@@ -242,12 +239,12 @@ body{
 .contact{
     margin-top: 5vh;
     display: flex;
-    align-items: center;           /* вертикальное выравнивание по центру */
+    align-items: center; /* вертикальное выравнивание по центру */
     gap: 1.5rem;     
 }
 .contact img{
     width: 6dvw;
     height: 12dvh;
-    flex-shrink: 0; /* картинка не сжимается */
+    flex-shrink: 0; /*картинка не сжимается*/
     object-fit: cover;  /*не сплющивает картинку*/
 }
