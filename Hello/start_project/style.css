@@ -52,7 +52,7 @@ h2, h3{
     border-radius: 1rem;
     font-size: 85%;
     font-weight: bold;
-    transition: all 0.3s ease; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    transition: all 0.3s ease-in-out; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
     box-shadow:  0rem 0.3rem 1rem rgb(245, 148, 2);
 }
 .btn-link:hover{
