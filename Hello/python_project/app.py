@@ -1,1 +1,6 @@
-print("hello, world!")
+x = "аМам"
+
+if x == "Мама":
+	print("Мама")
+else:
+	print("Папа")
