@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <title>MICROpolis</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-img">
+            <a href="index.html">
+                <img src="img/logotip.png" alt="Логотип компании" width="120" height="120">
+            </a>
+        </div>
+        <section class="menu">
+            <h1>MICROpolis</h1>
+        <nav>
+            <a href="index.html" class="btn-link">Главная</a>
+            <a href="catalog.html" class="btn-link">Каталог</a>
+            <a href="delivery.html" class="btn-link">Доставка</a>
+            <a href="contacts.html" class="btn-link">Контакты</a>
+        </nav>
+        </section>
+    </header>
+
+    <main>
+        <!-- Навигация по вкладкам -->
+
+<!-- Содержимое вкладок -->
+<div class="tabs-container">
+  
+  <!-- Вкладка: Каталог (для примера) -->
+  <div id="catalog" class="tab-content active">
+    <h2>Наши товары</h2>
+    <p>Здесь располагаются карточки товаров...</p>
+  </div>
+
+  <!-- Вкладка: Доставка -->
+  <div id="delivery" class="tab-content">
+    <h2>Оформление доставки</h2>
+    
+    <form id="delivery-form" action="#" method="POST">
+      <div class="form-group">
+        <label for="city">Населенный пункт *</label>
+        <input type="text" id="city" name="city" placeholder="Например, Москва" required>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="street">Улица *</label>
+          <input type="text" id="street" name="street" required>
+        </div>
+        <div class="form-group">
+          <label for="house">Дом *</label>
+          <input type="text" id="house" name="house" required>
+        </div>
+        <div class="form-group">
+          <label for="apartment">Квартира</label>
+          <input type="text" id="apartment" name="apartment">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Телефон для связи *</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+      </div>
+
+      <!-- Кнопка из предыдущего примера -->
+      <button type="submit" class="btn-primary">Подтвердить адрес</button>
+    </form>
+  </div>
+
+</div>
+    </main>
+    <footer class="footer">
+        <p>© 2026 MICROpolis. Все права защищены.</p>
+        <nav class="connection">
+            <a href="https://max.ru/u/f9LHodD0cOKrt1lMmfTHpPI6HMO_6cWlodkuPxEOjAAeWFcGtbpGjyd2KQU" target="_blank">MAX</a>
+            <a href="https://t.me/Sanya_with_Anya_69" target="_blank">Telegram</a>
+        </nav>
+    </footer>
+</body>
+</html>

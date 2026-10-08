@@ -163,6 +163,7 @@ body{
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавная анимация для всех эффектов */
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 .product-card:hover{
     transform: translateY(-7px); /* Карточка при наведении курсора вверх */
@@ -177,7 +178,7 @@ body{
     padding: 1.1dvw;
     display: flex;
     flex-direction: column;
-    flex-grow: 1; /* Растягивает блок, чтобы кнопка всегда прижималась к низу */
+    flex-grow: 1; /*Растягивает блок, чтобы кнопка всегда прижималась к низу*/
 }
 .product-info h3{
     margin: 0 0 1dvb 0;
@@ -185,40 +186,59 @@ body{
     color: #333333; 
 }
 .product-info p{
-    margin: 0 0 1dvb 0;
+    /* margin: 0 0 0 0; */
     font-size: 100%;
     color: #333333;
-    margin-bottom: 2dvb;
+    /* margin-bottom: 2dvb; */
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .product-price{
-    margin-top: auto;
+    font-size: 100%;
     color: rgb(245, 148, 2);
-    margin-bottom: 1dvb;
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
+
 .btn-buy{
-    text-align: center;
+    /* text-align: center; */
     text-decoration: none;
     background-color: #4caf50;
     color: #ffffff;
-    padding: 1dvh;
+    padding: 2dvh 2dvw;
     border-radius: 3rem;
+    border: none;
     font-weight:normal;
     font-size: 100%;
     transition: background-color, color 0.2s;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .btn-buy:hover {
     background-color: #45a049; /* Кнопка чуть темнеет при наведении */
     color: rgb(245, 148, 2);
+    cursor: pointer; /* Меняет стрелку на руку*/
 }
+
+.btn-buy:active {
+  transform: translateY(2px); /* Эффект физического продавливания вниз */
+}
+
+.card-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+    padding: 1.5dvh 2dvw;
+    align-items: center;
+    justify-content: center;
+}
+
 .product-card p{
     font-size: 100%;
-    font-weight: normal;
-    
+    font-weight: normal; 
 }
 
 .product-card a{
@@ -248,3 +268,5 @@ body{
     flex-shrink: 0; /*картинка не сжимается*/
     object-fit: cover;  /*не сплющивает картинку*/
 }
+
+
