@@ -1,4 +1,5 @@
 import random
+from getpass import getpass
 #
 # mounth = "Февраль";
 # budet = 100000;
@@ -42,20 +43,9 @@ import random
 # else:
 # 	print("Нужная сумма собрана! Собираем чемоданы")1
 
-n = 9
+# 5.Банкомат где начальная сумма 1000
+# есть меню где 1- пополнить 2-снять 3-показать баланс 0-выход
+# при снятии больше баланса отказ 
+# при неверной команде пропустить
+# при 0 выйти и показать итоговый баланс
 
-def prime_numbers(n):
-    l= []
-    for i in range(2, n+1):
-        status = True
-        for j in range(2, i):
-            if i % j == 0:
-                status = False
-                break
-            # else:
-            #     status = True
-        if status == True:
-            l.append(i)
-    return l
-
-print(prime_numbers(n))
