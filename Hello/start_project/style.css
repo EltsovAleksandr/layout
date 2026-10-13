@@ -149,10 +149,10 @@ body{
 .products-grid{
     display: grid;
     /* Автоматически подбирает количество колонок. Минимальная ширина карточки 280px */
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15dvw, 1fr));
     gap: 1rem; /* Расстояние между карточками */
-    padding: 5dvh 2dvw;
-    max-width: 90%;
+    padding: 4dvh 2dvw;
+    max-width: 95%;
     margin: auto; /* Центрирует всю сетку на странице */
 }
 .product-card{
@@ -208,7 +208,7 @@ body{
     text-decoration: none;
     background-color: #4caf50;
     color: #ffffff;
-    padding: 2dvh 2dvw;
+    padding: 1dvh 2dvw;
     border-radius: 3rem;
     border: none;
     font-weight:normal;
@@ -221,6 +221,7 @@ body{
     background-color: #45a049; /* Кнопка чуть темнеет при наведении */
     color: rgb(245, 148, 2);
     cursor: pointer; /* Меняет стрелку на руку*/
+
 }
 
 .btn-buy:active {
@@ -231,7 +232,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 1dvh;
-    padding: 1.5dvh 2dvw;
+    padding: 1dvh 1dvw;
     align-items: center;
     justify-content: center;
 }
@@ -269,4 +270,18 @@ body{
     object-fit: cover;  /*не сплющивает картинку*/
 }
 
+.img-farm-carus{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: 0.3rem; 
+    padding:0.5dvh 2dvw;
+    max-width: 100%;
+    margin: auto;
+}
 
+.img-farm-carus img{
+    width: 100%;
+    height: 300px;
+    object-fit:cover; /*Заполняет весь блок изображением, сохраняя пропорции, но может обрезать края.*/
+    
+}
