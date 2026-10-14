@@ -1,0 +1,38 @@
+#blok_conteiner3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#igral-kub{
+    width: 80%;
+    height: 80%;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color:azure;
+}
+.tochka{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: black;
+}
+.blok_razdel{
+    width: 100%;
+    height: 32%;
+    /* border: 2px solid green; */
+}
+#blok-krug1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#blok-krug2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blok-krug3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

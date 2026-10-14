@@ -1,0 +1,16 @@
+ #blok_conteiner1 {
+            /* активирует флекс */
+            display: flex;
+            /* меняет главную ось на у */
+            flex-direction: column;
+            /* расположение на главной оси */
+            justify-content: center;
+            /* расположение на второстепенной оси */
+            align-items: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+        }

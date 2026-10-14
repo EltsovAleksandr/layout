@@ -1,0 +1,10 @@
+#blok_conteiner6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ss{
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,16 @@
+.blok_conteiner4{
+    display: flex;
+}
+.dop-class{
+    width: 100%;
+    height: 100%;
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+.img-margin{
+    margin: 15px;
+}
