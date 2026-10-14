@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    position:relative;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center; 
+    padding: 0% 1dvw;
+    /* padding: 0px 20px; */
+    background-color: #00674f;
+    color:rgb(245, 148, 2);
+    box-shadow: 0rem 0.8rem 1rem  rgb(236, 253, 1); 
+}
+h2, h3{
+    margin: 1%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(245, 148, 2);
+}
+.logo-img{
+    max-width: 5%;
+    height: auto;
+    padding: 1dvh;
+} 
+.menu{
+    margin: 0 auto;
+    font-family:'TildaSans', Arial, sans-serif;
+    font-size: 110%;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    /* padding: 10px 20px; */
+    padding: 1dvh 1dvw;
+    border-radius: 1rem;
+    font-size: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    box-shadow: 0rem 0.3rem 1rem rgb(245, 148, 2);
+} 
+.btn-link{
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    /* padding: 10px 15px; */
+    padding: 0.7dvh 1dvw;
+    border-radius: 1rem;
+    font-size: 85%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    box-shadow:  0rem 0.3rem 1rem rgb(245, 148, 2);
+}
+.btn-link:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
+    transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
+}
+/* Эффект при наведении курсора*/
+.menu a:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
+    transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
+} 
+.menu nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* Задаем одинаковое расстояние между заголовком и всеми ссылками */
+}
+.menu h1 {
+    color:rgb(245, 148, 2);
+    margin-bottom: 1rem;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-shadow: 0rem 0.09rem 0.15rem rgb(236, 253, 1);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: fantasy;
+    background: #457a68;
+    color:rgb(0, 0, 0);
+    padding-bottom: 10dvh;
+}
+
+.content{
+    padding-bottom: 10dvh;
+    margin-top: 3dvh;
+}
+/* .content h1 {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    margin: 4dvh;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color:rgb(245, 148, 2);
+} */
+.footer{
+    position:fixed;
+    height:7dvh;
+    bottom:0dvh;
+    width:100%;
+    background-color: #00674f;
+    color:rgb(245, 148, 2);
+    padding: 10px;
+    margin: 0 auto;
+    font-family:Comic Sans MS, Comic Sans, cursive;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer a {
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    padding: 1dvh 2dvw;
+    border-radius: 1rem;
+    font-size: 100%;
+    transition: all 0.3s ease; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    box-shadow: 0rem 0.3rem 0.7rem rgb(245, 148, 2);
+    
+    
+}
+
+.footer a:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow:   0rem 0.3rem 1rem rgb(236, 253, 1);
+    transform: translateY(-3px); /* Кнопка визуально приподнимается на 3 пикселя вверх */
+}
+.connection{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap: 1rem;
+    
+}
+
