@@ -1,0 +1,161 @@
+.lesson_1{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    /* border: 2px solid red; */
+    /* background-color: aqua; */
+    padding: 1rem;
+}
+.img-box{
+    width: 40%;
+    height: 40%;
+    border-radius: 33%;
+    display: flex;
+    justify-self: center;
+    box-shadow: 0px 2px 2px 5px green;
+
+}
+
+.img-box:hover{
+    rotate: 180deg;
+}
+
+.text-img{
+    display: flex;
+    justify-self: center;
+    color: red;
+}
+
+.kyyybishe{
+    display: flex;
+    padding: 5px;
+    gap: 5px;
+}
+.kyb{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(5, 252, 104);
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    
+}
+.tochka{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 2px;
+    padding: 2px;
+    background-color: yellow;
+}
+
+#kyb_1{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.tochka-box2{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#kyb_2_1{
+    display: flex; 
+    align-items: start; 
+    justify-content: start;
+}
+
+#kyb_2_2{
+    display: flex; 
+    align-items: end; 
+    justify-content: end;
+}
+.tochka-box3{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+#kyb_3_1{
+    display: flex; 
+    align-items: end; 
+    justify-content: start;
+}
+
+#kyb_3_2{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#kyb_3_3{
+    display: flex; 
+    align-items: start; 
+    justify-content: end;
+}
+
+.tochka-box4{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#kyb_4_1{
+    display: flex; 
+    align-items: start; 
+    justify-content: space-between;
+}
+
+#kyb_4_2{
+    display: flex; 
+    align-items: end; 
+    justify-content: space-between;
+}
+
+.tochka-box5{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+#kyb_5_1{
+    display: flex; 
+    align-items: start; 
+    justify-content: space-between;
+}
+
+#kyb_5_2{
+    display: flex; 
+    align-items: end; 
+    justify-content: space-between;
+}
+#kyb_5_3{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.tochka-box6{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* flex-direction: row-reverse; */
+}
+
+#kyb_6_1{
+    display: flex; 
+    align-items: end; 
+    justify-content:space-between;
+}
+
+#kyb_6_2{
+    display: flex; 
+    align-items: start; 
+    justify-content: space-between;
+}
+#kyb_6{
+    
+    flex-direction: reverse;
+} 
