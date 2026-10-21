@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_1.css" />
+    <title>Калькулятор</title>
+  </head>
+  <body>
+    <form method="POST" class="calculator" action="/">
+      <div class="border-calc">
+        <div class="screen">
+          <input
+            type="text"
+            id="display"
+            name="expression"
+            value="{{ result }}"
+          />
+        </div>
+        <div class="btn-keybord">
+          <button type="button" class="keyboard">1</button>
+          <button type="button" class="keyboard">2</button>
+          <button type="button" class="keyboard">3</button>
+          <button type="button" class="keyboard">+</button>
+          <button type="button" class="keyboard">4</button>
+          <button type="button" class="keyboard">5</button>
+          <button type="button" class="keyboard">6</button>
+          <button type="button" class="keyboard">-</button>
+          <button type="button" class="keyboard">7</button>
+          <button type="button" class="keyboard">8</button>
+          <button type="button" class="keyboard">9</button>
+          <button type="button" class="keyboard">/</button>
+          <button type="button" class="keyboard">.</button>
+          <button type="button" class="keyboard">0</button>
+          <button type="button" class="keyboard">,</button>
+          <button type="button" class="keyboard">*</button>
+          <button type="button" class="keyboard">cleaner</button>
+          <button type="submit" class="keyboard">=</button>
+        </div>
+      </div>
+    </form>
+    <script>
+      const screen = (id = "display");
+    </script>
+  </body>
+</html>
