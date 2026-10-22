@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style_1.css" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style_1.css') }}"
+    />
     <title>Калькулятор</title>
   </head>
   <body>
@@ -11,6 +14,7 @@
       <div class="border-calc">
         <div class="screen">
           <input
+            class="screen-input"
             type="text"
             id="display"
             name="expression"
@@ -40,7 +44,28 @@
       </div>
     </form>
     <script>
-      const screen = (id = "display");
+      const screen = document.getElementById("display");
+      const buttons = document.querySelectorAll(".keyboard");
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (button.textContent === "=") {
+            console.log("Вычисляем придется подождать");
+          } else {
+            screen.value += button.textContent;
+          }
+          console.log(screen.value);
+        });
+      });
+      fetch("/calculate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          expression: "12 + 3",
+        }),
+      });
+      console.log(screen);
     </script>
   </body>
 </html>
