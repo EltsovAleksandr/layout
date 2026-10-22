@@ -38,33 +38,56 @@
           <button type="button" class="keyboard">0</button>
           <button type="button" class="keyboard">,</button>
           <button type="button" class="keyboard">*</button>
-          <button type="button" class="keyboard">cleaner</button>
-          <button type="submit" class="keyboard">=</button>
+          <button type="button" class="keyboard">AC</button>
+          <button type="button" class="keyboard">=</button>
         </div>
       </div>
     </form>
     <script>
       const screen = document.getElementById("display");
       const buttons = document.querySelectorAll(".keyboard");
+      let justCalculated = false;
       buttons.forEach((button) => {
         button.addEventListener("click", () => {
+          if (justCalculated) {
+            console.log("Следующая кнопка:", button.textContent);
+            if ("1234567890.".includes(button.textContent)) {
+              screen.value = "";
+            }
+            justCalculated = false;
+          }
+
           if (button.textContent === "=") {
-            console.log("Вычисляем придется подождать");
+            fetch("/calculate", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                expression: screen.value,
+              }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                /*получает ответ Flask в формате JSON.*/
+                screen.value = data.result;
+                justCalculated = true;
+                console.log(
+                  "Вычисление завершено:",
+                  justCalculated,
+                ); /*сообщает калькулятору, что вычисление завершено*/
+              });
           } else {
-            screen.value += button.textContent;
+            if ("+-*/%".includes(button.textContent)) {
+              screen.value += " " + button.textContent + " ";
+            } else {
+              screen.value += button.textContent;
+            }
           }
           console.log(screen.value);
         });
       });
-      fetch("/calculate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          expression: "12 + 3",
-        }),
-      });
+
       console.log(screen);
     </script>
   </body>

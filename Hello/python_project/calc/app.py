@@ -1,5 +1,5 @@
 import operator
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 
 app_calc = Flask(__name__)
 
@@ -56,8 +56,9 @@ def calc():
 
 @app_calc.route("/calculate", methods=["POST"])
 def calculate():
-    data = request.get_json()
+    data = request.get_json()  #получает данные от JavaScript.
+    result = calculating(data["expression"]) #
     print(data)
-    return "Данные получены"
+    return jsonify({"result": result}) #упаковывает результат в JSON и отправляет его обратно JavaScript.
 
 app_calc.run(debug=True)
