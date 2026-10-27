@@ -1,27 +1,28 @@
-.kybiki{
+.border-gran{
+    width: 500px;
+    height: 500px;
+    border: 3px solid yellowgreen;
     display: flex;
-    gap: 5px;
-}
-.kyb{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    
-}
 
-.tochka{
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
+}
+.kryg{
+    width: 50px;
+    height: 50px;
+    border: 3px solid fuchsia;
+    background-color: aqua;
     border-radius: 50%;
-    background-color: blueviolet;
 }
-
-.tochka_2_1{
+.polovin_1{
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
 }
-.tochka_2_2{
+.polovin_2{
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
+    align-items: end;
 }
