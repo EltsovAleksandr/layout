@@ -16,6 +16,35 @@ header{
     color:rgb(245, 148, 2);
     box-shadow: 0rem 0.8rem 1rem  rgb(236, 253, 1); 
 }
+#login-panel{
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 320px;
+    padding: 24px;
+    background-color: #f7f9f4;
+    border: 1px solid #dce5d5;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgb(236, 253, 1);
+    z-index: 100;
+
+}
+#login-panel.open{
+    display: block;
+}
+#login-panel input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 6px 0 16px;
+    border: 1px solid #cbd8c5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+    outline: none;
+}
 #logo{
     width: 8dvw;
     height: 3dvw;
@@ -36,13 +65,13 @@ h1, h2, h3{
     padding: 1dvh;
 } 
 .menu{
-    width: 85%;
+    width: 100%;
     margin: 0.5dvw 0.5dvh;
     font-family:'TildaSans', Arial, sans-serif;
     font-size: 110%;
     display: flex;
     justify-content: end;
-    gap: 1rem;
+    gap: 0.5rem;
     justify-self: auto;
     align-items: center;
     flex-wrap: wrap;
@@ -80,8 +109,11 @@ h1, h2, h3{
     box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
     transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
 }
-.btn-link: active{
+.btn-link:active{
     transform: translateY(2px);
+}
+#btn_lk{
+    border: none;
 }
 /* Эффект при наведении курсора*/
 .menu a:hover{
