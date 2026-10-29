@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    /* position:relative; */
+    width: 100%;
+    /* height: 20dvh; */
+    top: 1dvw;
+    z-index: 100;
+    display: flex;
+    align-items: center; 
+    background-color: #00674f;
+    color:rgb(245, 148, 2);
+    box-shadow: 0rem 0.8rem 1rem  rgb(236, 253, 1); 
+}
+#logo{
+    width: 8dvw;
+    height: 3dvw;
+}
+.micropolis{
+    font-size: 4dvw;
+    padding-left: 2cqw;
+}
+h1, h2, h3{
+    margin: 1%;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: rgb(245, 148, 2);
+}
+.logo-img{
+    /* width: 100%; */
+    max-width: 100%;
+    height: auto;
+    padding: 1dvh;
+} 
+.menu{
+    width: 85%;
+    margin: 0.5dvw 0.5dvh;
+    font-family:'TildaSans', Arial, sans-serif;
+    font-size: 110%;
+    display: flex;
+    justify-content: end;
+    gap: 1rem;
+    justify-self: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.btn-menu{
+    font-size: 2dvw;
+}
+/* .menu a{
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    padding: 10px 20px; 
+    padding: 1dvh 1dvw;
+    border-radius: 1rem;
+    font-size: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease; 
+    box-shadow: 0rem 0.3rem 1rem rgb(245, 148, 2);
+} */
+.btn-link{
+    text-decoration: none;
+    color: rgb(245, 148, 2);
+    background-color:#13be6e91;
+    /* padding: 10px 15px; */
+    padding: 0.7dvh 1dvw;
+    border-radius: 1rem;
+    font-size: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; /* Плавная анимация для всех эффектов, ease — это ускорение в начале, замедление в конце (самый естественный вариант). */
+    box-shadow:  0rem 0.3rem 1rem rgb(245, 148, 2);
+}
+.btn-link:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
+    transform: translateY(-3px); /*Кнопка визуально приподнимается на 3 пикселя вверх */
+}
+.btn-link: active{
+    transform: translateY(2px);
+}
+/* Эффект при наведении курсора*/
+.menu a:hover{
+    background-color: rgb(245, 148, 2);
+    color: #00674f;
+    box-shadow: 0rem 0.5rem 1rem rgb(236, 253, 1);
+    transform: translateY(-3px);
+}  
+.menu nav{
+    display: flex;
+    align-items: center;
+    gap: 3rem; /* Задаем одинаковое расстояние между заголовком и всеми ссылками */
+}
+.menu h1 {
+    color:rgb(245, 148, 2);
+    margin-bottom: 1rem;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    text-shadow: 0rem 0.09rem 0.15rem rgb(236, 253, 1);
+}

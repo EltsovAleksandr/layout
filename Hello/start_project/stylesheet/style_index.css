@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 
-header{
-    /* position:relative; */
+/* header{
+    position:relative;
     top: 1dvw;
     z-index: 100;
     display: flex;
     align-items: center; 
     padding: 0% 1dvw;
-    /* padding: 0px 20px; */
+    padding: 0px 20px;
     background-color: #00674f;
     color:rgb(245, 148, 2);
     box-shadow: 0rem 0.8rem 1rem  rgb(236, 253, 1); 
-}
+} */
 #logo{
     width: 7dvw;
     height: 10dvh;

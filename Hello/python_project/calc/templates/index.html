@@ -1,94 +1,48 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='style_1.css') }}"
-    />
-    <title>Калькулятор</title>
-  </head>
-  <body>
-    <form method="POST" class="calculator" action="/">
-      <div class="border-calc">
-        <div class="screen">
-          <input
-            class="screen-input"
-            type="text"
-            id="display"
-            name="expression"
-            value="{{ result }}"
-          />
-        </div>
-        <div class="btn-keybord">
-          <button type="button" class="keyboard">1</button>
-          <button type="button" class="keyboard">2</button>
-          <button type="button" class="keyboard">3</button>
-          <button type="button" class="keyboard">+</button>
-          <button type="button" class="keyboard">4</button>
-          <button type="button" class="keyboard">5</button>
-          <button type="button" class="keyboard">6</button>
-          <button type="button" class="keyboard">-</button>
-          <button type="button" class="keyboard">7</button>
-          <button type="button" class="keyboard">8</button>
-          <button type="button" class="keyboard">9</button>
-          <button type="button" class="keyboard">/</button>
-          <button type="button" class="keyboard">.</button>
-          <button type="button" class="keyboard">0</button>
-          <button type="button" class="keyboard">,</button>
-          <button type="button" class="keyboard">*</button>
-          <button type="button" class="keyboard">AC</button>
-          <button type="button" class="keyboard">=</button>
-        </div>
-      </div>
-    </form>
-    <script>
-      const screen = document.getElementById("display");
-      const buttons = document.querySelectorAll(".keyboard");
-      let justCalculated = false;
-      buttons.forEach((button) => {
-        button.addEventListener("click", () => {
-          if (justCalculated) {
-            console.log("Следующая кнопка:", button.textContent);
-            if ("1234567890.".includes(button.textContent)) {
-              screen.value = "";
-            }
-            justCalculated = false;
-          }
-
-          if (button.textContent === "=") {
-            fetch("/calculate", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                expression: screen.value,
-              }),
-            })
-              .then((response) => response.json())
-              .then((data) => {
-                /*получает ответ Flask в формате JSON.*/
-                screen.value = data.result;
-                justCalculated = true;
-                console.log(
-                  "Вычисление завершено:",
-                  justCalculated,
-                ); /*сообщает калькулятору, что вычисление завершено*/
-              });
-          } else {
-            if ("+-*/%".includes(button.textContent)) {
-              screen.value += " " + button.textContent + " ";
-            } else {
-              screen.value += button.textContent;
-            }
-          }
-          console.log(screen.value);
-        });
-      });
-
-      console.log(screen);
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style_1.css') }}"
+        />
+        <title>Калькулятор</title>
+    </head>
+    <body>
+        <form method="POST" class="calculator" action="/">
+            <div class="border-calc">
+                <div class="screen">
+                    <input
+                        class="screen-input"
+                        type="text"
+                        id="display"
+                        name="expression"
+                        value="{{ result }}"
+                    />
+                </div>
+                <div class="btn-keybord">
+                    <button type="button" class="keyboard">1</button>
+                    <button type="button" class="keyboard">2</button>
+                    <button type="button" class="keyboard">3</button>
+                    <button type="button" class="keyboard">+</button>
+                    <button type="button" class="keyboard">4</button>
+                    <button type="button" class="keyboard">5</button>
+                    <button type="button" class="keyboard">6</button>
+                    <button type="button" class="keyboard">-</button>
+                    <button type="button" class="keyboard">7</button>
+                    <button type="button" class="keyboard">8</button>
+                    <button type="button" class="keyboard">9</button>
+                    <button type="button" class="keyboard">/</button>
+                    <button type="button" class="keyboard">.</button>
+                    <button type="button" class="keyboard">0</button>
+                    <button type="button" class="keyboard">AC</button>
+                    <button type="button" class="keyboard">*</button>
+                    <button type="button" class="keyboard">=</button>
+                    <button type="button" class="keyboard">+/-</button>
+                </div>
+            </div>
+        </form>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </body>
 </html>

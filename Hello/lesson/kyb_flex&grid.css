@@ -1,0 +1,65 @@
+.rybik{
+    width: 400px;
+    height: 400px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.kyb{
+    width: 100px;
+    height: 100px;
+    border: 3px solid rgb(5, 252, 104);
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    
+}
+.tochka{
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 2px;
+    padding: 2px;
+    background-color: yellow;
+}
+.tochka-box6{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* flex-direction: row-reverse; */
+}
+
+#kyb_6_1{
+    display: flex; 
+    align-items: end; 
+    justify-content:space-around;
+}
+
+#kyb_6_2{
+    display: flex; 
+    align-items: start; 
+    justify-content: space-around;
+}
+#kyb_6{
+    
+    flex-direction: reverse;
+} 
+
+.kyb_g{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(5, 252, 104);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 123, 0);
+    /* margin: 50px; */
+    
+}
+#kyb_g_6{
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    /* grid-template-rows: ; */
+    place-items: center;
+}
