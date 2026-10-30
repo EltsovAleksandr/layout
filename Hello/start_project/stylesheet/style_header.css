@@ -45,6 +45,86 @@ header{
     font-size: 14px;
     outline: none;
 }
+
+
+#login-panel h2 {
+    margin: 0 0 8px;
+    color: #354b32;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#login-panel p {
+    margin: 0 0 22px;
+    color: #71806b;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#login-panel input:focus {
+    border-color: #55764b;
+    box-shadow: 0 0 0 3px rgba(85, 118, 75, 0.12);
+}
+
+#login-submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #55764b;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#login-submit:hover {
+    background-color: #405e38;
+    color: rgb(245, 148, 2);
+}
+
+#forgot-password {
+    display: block;
+    margin-top: 14px;
+    color: #55764b;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#forgot-password:hover {
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(245, 148, 2);
+}
+
+
+.login-register {
+    margin-top: 22px;
+    padding-top: 16px;
+    border-top: 1px solid #dce5d5;
+    text-align: center;
+    font-size: 13px;
+    color: #71806b;
+}
+
+#register-link {
+    display: block;
+    margin-top: 6px;
+    color: #55764b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(245, 148, 2);
+}
+
 #logo{
     width: 8dvw;
     height: 3dvw;
