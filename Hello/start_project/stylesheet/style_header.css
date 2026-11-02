@@ -28,7 +28,7 @@ header{
     border: 1px solid #dce5d5;
     border-radius: 14px;
     box-shadow: 0 8px 24px rgb(236, 253, 1);
-    z-index: 100;
+    z-index: 11;
 }
 
 #login-panel.open{
@@ -213,4 +213,23 @@ h1, h2, h3{
     margin-bottom: 1rem;
     font-family: Comic Sans MS, Comic Sans, cursive;
     text-shadow: 0rem 0.09rem 0.15rem rgb(236, 253, 1);
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    z-index: 10;
+    display: none;
+}
+.overlay.open{
+    display: block;
+}
+
+.steps{
+    display: flex;
+    gap: 24px;
 }
