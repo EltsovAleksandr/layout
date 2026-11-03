@@ -1,0 +1,94 @@
+.calculator{
+    width: 90%;
+    max-width: 500px;
+    min-width: 250px;
+    height: 800px;
+    border: 2px solid black;
+    background-color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 0.3fr 1fr 1fr);
+    gap: 10px;
+    grid-template-areas:
+        "screen"
+        "science"
+        "num-ops";
+
+}
+
+
+.screen{
+    grid-area: screen;
+    width: 100%;
+    height: 50%;
+    
+
+}
+
+.screen-input{
+    width: 99%;
+    height: 50%;
+    border: none;
+    font-size: 30px;
+    background-color: black;
+    color: aliceblue;
+}
+.science{
+    grid-area: science;
+    display: grid;
+    min-width: 25px;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+}
+.science button{
+    width: 80%;
+    height: 70%;
+    border-radius: 25px;
+    background-color: #262626;
+}
+.num-ops{
+    grid-area: num-ops;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr 1fr);
+    
+}
+.numbers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    
+}
+.numbers button{
+    width: 95%;
+    height: 70%;
+    border-radius: 45px;
+    background-color: #363636;
+    
+}
+.operators{
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+#btn-del, #AC, #btn-procent{
+    background-color: #616161;
+}
+.operators button{
+    width: 95%;
+    height: 70%;
+    border-radius: 45px;
+    background-color: #FF9300;
+}
+
+.btn-keybord{
+    color: rgb(88, 85, 81);
+    /* border: 3px solid rgb(0, 255, 119); */
+}
+.keyboard{
+    width: 70%;
+    height: 95%;
+    border-radius: 50%;
+    color: rgb(250, 250, 250);
+    background-color: rgb(72, 69, 69);
+}

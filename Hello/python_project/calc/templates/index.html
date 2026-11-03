@@ -3,43 +3,84 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
+        <!-- <link
             rel="stylesheet"
             href="{{ url_for('static', filename='style_1.css') }}"
+        /> -->
+        <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='style_2.css') }}"
         />
         <title>Калькулятор</title>
     </head>
     <body>
         <form method="POST" class="calculator" action="/">
-            <div class="border-calc">
-                <div class="screen">
-                    <input
-                        class="screen-input"
-                        type="text"
-                        id="display"
-                        name="expression"
-                        value="{{ result }}"
-                    />
-                </div>
-                <div class="btn-keybord">
-                    <button type="button" class="keyboard">1</button>
-                    <button type="button" class="keyboard">2</button>
-                    <button type="button" class="keyboard">3</button>
-                    <button type="button" class="keyboard">+</button>
-                    <button type="button" class="keyboard">4</button>
-                    <button type="button" class="keyboard">5</button>
-                    <button type="button" class="keyboard">6</button>
-                    <button type="button" class="keyboard">-</button>
+            <div class="screen">
+                <input
+                    class="screen-input"
+                    type="text"
+                    id="display"
+                    name="expression"
+                    value="{{ result }}"
+                />
+            </div>
+            <div class="science">
+                <button type="button" class="keyboard">(</button>
+                <button type="button" class="keyboard">)</button>
+                <button type="button" class="keyboard">mc</button>
+                <button type="button" class="keyboard">m+</button>
+                <button type="button" class="keyboard">m-</button>
+                <button type="button" class="keyboard">mr</button>
+                <button type="button" class="keyboard">2<sup>nd</sup></button>
+                <button type="button" class="keyboard">x<sup>2</sup></button>
+                <button type="button" class="keyboard">x<sup>3</sup></button>
+                <button type="button" class="keyboard">x<sup>y</sup></button>
+                <button type="button" class="keyboard">e<sup>x</sup></button>
+                <button type="button" class="keyboard">10<sup>x</sup></button>
+                <button type="button" class="keyboard">&frac12;</button>
+                <button type="button" class="keyboard"><sup>2</sup>&radic;x</sup></button>
+                <button type="button" class="keyboard"><sup>3</sup>&radic;x</button>
+                <button type="button" class="keyboard"><sup>y</sup>&radic;x</button>
+                <button type="button" class="keyboard">In</button>
+                <button type="button" class="keyboard">log<sub>10</sub></button>
+                <button type="button" class="keyboard">x!</button>
+                <button type="button" class="keyboard">sin</button>
+                <button type="button" class="keyboard">cos</button>
+                <button type="button" class="keyboard">tg</button>
+                <button type="button" class="keyboard">e</button>
+                <button type="button" class="keyboard">EE</button>
+                <button type="button" class="keyboard">Rand</button>
+                <button type="button" class="keyboard">sh</button>
+                <button type="button" class="keyboard">ch</button>
+                <button type="button" class="keyboard">th</button>
+                <button type="button" class="keyboard">&pi;</button>
+                <button type="button" class="keyboard">Rad</button>
+                
+            </div>
+            <div class="num-ops">
+                <div class="numbers">
+                    <button type="button" class="keyboard" id="btn-del">&#9003;</button>
+                    <button type="button" class="keyboard" id="AC">AC</button>
+                    <button type="button" class="keyboard" id="btn-procent">%</button>
                     <button type="button" class="keyboard">7</button>
                     <button type="button" class="keyboard">8</button>
                     <button type="button" class="keyboard">9</button>
-                    <button type="button" class="keyboard">/</button>
-                    <button type="button" class="keyboard">.</button>
+                    <button type="button" class="keyboard">4</button>
+                    <button type="button" class="keyboard">5</button>
+                    <button type="button" class="keyboard">6</button>
+                    <button type="button" class="keyboard">1</button>
+                    <button type="button" class="keyboard">2</button>
+                    <button type="button" class="keyboard">3</button>
+                    <button type="button" class="keyboard">&plusmn;</button>
                     <button type="button" class="keyboard">0</button>
-                    <button type="button" class="keyboard">AC</button>
-                    <button type="button" class="keyboard">*</button>
+                    <button type="button" class="keyboard">,</button>
+                </div>
+                <div class="operators">
+                    <button type="button" class="keyboard">&divide;</button>
+                    <button type="button" class="keyboard">x</button>
+                    <button type="button" class="keyboard">-</button>
+                    <button type="button" class="keyboard">+</button>
                     <button type="button" class="keyboard">=</button>
-                    <button type="button" class="keyboard">+/-</button>
                 </div>
             </div>
         </form>

@@ -2,6 +2,7 @@
     width: 700px;
     height: 800px;
     border: 3px solid black;
+    /* background: black; */
     /* border-radius: 20%; */
 }
 
@@ -14,6 +15,12 @@
     align-items: center;
     font-size: 30px;
 }
+.science{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+}
 .btn-keybord{
     width: auto ;
     height: auto;
@@ -22,12 +29,13 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr 1fr;
-    color: antiquewhite;
+    color: rgb(88, 85, 81);
     /* border: 3px solid rgb(0, 255, 119); */
 }
 .keyboard{
-    width: auto;
+    width: 100px;
     height: 100px;
+    border-radius: 50%;
 }
 .screen-input{
     width: 100%;
