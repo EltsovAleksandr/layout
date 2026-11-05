@@ -4,7 +4,7 @@ let justCalculated = false;
 buttons.forEach((button) => {
     button.addEventListener("click", () => {
         if (justCalculated) {
-            if ("1234567890".includes(button.textContent)) {
+            if ("1234567890.".includes(button.textContent)) {
                 screen.value = "";
             }
             justCalculated = false;
@@ -17,12 +17,12 @@ buttons.forEach((button) => {
             let elem = end_elem[end_elem.length - 1];
             if (Number.isFinite(Number(elem))) {
                 if (elem.startsWith("-")) {
-                    elem = elem.slice(1)
+                    elem = elem.slice(1);
                 } else {
-                    elem = "-" + elem
+                    elem = "-" + elem;
                 }
-                end_elem[end_elem.length - 1] = elem
-                screen.value = end_elem.join(" ")
+                end_elem[end_elem.length - 1] = elem;
+                screen.value = end_elem.join(" ");
             }
         } else if (button.textContent === "=") {
             fetch("/calculate", {
@@ -45,7 +45,7 @@ buttons.forEach((button) => {
                     ); /*сообщает калькулятору, что вычисление завершено*/
                 });
         } else {
-            if ("+-*/%".includes(button.textContent)) {
+            if ("+-x÷%*/".includes(button.textContent)) {
                 screen.value += " " + button.textContent + " ";
             } else {
                 screen.value += button.textContent;
