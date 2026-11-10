@@ -1,65 +1,76 @@
-.rybik{
-    width: 400px;
-    height: 400px;
-    /* border: 2px solid black; */
+.border-0{
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* border: 1px solid greenyellow; */
+    padding: 20px;
+}
+.bor{
+    width: 100%;
+    height: 150px;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
 
-.kyb{
+}
+.sq{
     width: 100px;
     height: 100px;
-    border: 3px solid rgb(5, 252, 104);
+    border: 1px solid black;
+}
+
+.kr{
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid black; */
     display: flex;
-    flex-direction: column;
-    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+}
+.kr-c{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: conic-gradient(
+        #06ee89,
+        #03f9d8,
+        #00eaff,
+        #03f6b5
+    );
     
+    animation: rotateCircle 3s linear infinite;
+}
+
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.tochka-border{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
 }
 .tochka{
-    width: 20px;
-    height: 20px;
-    border: 2px solid black;
-    border-radius: 50%;
-    margin: 2px;
-    padding: 2px;
-    background-color: yellow;
-}
-.tochka-box6{
-    width: 100%;
-    height: 100%;
-    /* border: 1px solid black; */
-    /* flex-direction: row-reverse; */
-}
-
-#kyb_6_1{
-    display: flex; 
-    align-items: end; 
-    justify-content:space-around;
-}
-
-#kyb_6_2{
-    display: flex; 
-    align-items: start; 
-    justify-content: space-around;
-}
-#kyb_6{
-    
-    flex-direction: reverse;
-} 
-
-.kyb_g{
     width: 100px;
     height: 100px;
-    border: 2px solid rgb(5, 252, 104);
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(255, 123, 0);
-    /* margin: 50px; */
+    border: 1px solid black;
+    border-radius: 50%;
+    transition: 2s;
+    background-color: aquamarine;
     
 }
-#kyb_g_6{
-    display: grid;
-    grid-template-columns: repeat(2, 48px);
-    /* grid-template-rows: ; */
-    place-items: center;
+.tochka:hover{
+    transform: perspective(500px) rotateY(180deg);
+    background-color: rgb(109, 195, 18);
 }
