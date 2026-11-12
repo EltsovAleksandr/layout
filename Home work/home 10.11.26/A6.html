@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ob{
+            display: flex;
+        }
+        .colum{
+            flex-grow: 1;
+        }
+        .colum2{
+            flex-grow: 3; /*Он получает в три раза больше свободного пространства, чем блок с flex-grow: 1.*/
+        }
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="ob">
+        <div class="colum">
+            <div>dsf</div>
+            <div>dsf</div>
+            <div>dsf</div>
+        </div>
+        <div class="colum2">
+            <div>dsf</div>
+            <div>dsf</div>
+            <div>dsf</div>
+        </div>
+    </div>
+</body>
+</html>
