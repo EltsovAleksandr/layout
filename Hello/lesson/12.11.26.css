@@ -1,0 +1,76 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9edf2;
+}
+.svet{
+    background: black;
+    border: 5px solid #454b54;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+
+}
+.kr{
+    width: 80px; height: 80px;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+@keyframes reds{
+    0%, 35.71% {
+        background-color: red;
+    }
+    35.72%, 100% {
+        background-color: black;
+    }
+}
+@keyframes yellows{
+    0%, 28.75%{
+        background-color: black;
+    }
+    28.75%, 35.71%{
+        background-color: yellow;
+    }
+    35.72%, 85.71%{
+        background-color: black;
+    }
+    85.71%, 100%{
+        background-color: black;
+    }
+}
+@keyframes greens{
+    1.43%, 74.99% {
+        background: black;
+    
+    }
+    75%, 78.56% {
+        background: green;
+    }
+    78.57%, 82.13% {
+        background: black;
+    }
+    82.14%, 85.71% {
+        background: green;
+    }
+    85.72%, 100% {
+        background: green;
+}
+}
+#reds{
+    animation: reds 14s step-end infinite;
+}
+
+#yellow{
+    animation: yellows 14s step-end infinite;
+}
+#gren{
+    animation: greens 14s step-end infinite;
+}

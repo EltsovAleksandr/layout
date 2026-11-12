@@ -1,36 +1,137 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="kyb_flex&grid.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="rybik">
-        <div class="kyb" id="kyb_6">
-            <div class="tochka-box6" id="kyb_6_1"> 
-                <div class="tochka"></div>
-                <div class="tochka"></div>
-            </div>  
-            <div class="tochka-box6" id="kyb_6_1"> 
-                <div class="tochka"></div>
-                <div class="tochka"></div>
-            </div>  
-            <div class="tochka-box6" id="kyb_6_2"> 
-                <div class="tochka"></div>
-                <div class="tochka"></div>
-            </div> 
-        </div>  
+    <title>Светофор</title>
 
-        <div class="kyb_g" id="kyb_g_6">
-            <div class="tochka"></div>
-            <div class="tochka"></div>
-            <div class="tochka"></div>
-            <div class="tochka"></div>
-            <div class="tochka"></div>
-            <div class="tochka"></div>
-        </div>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #e9edf2;
+        }
+
+        .traffic-light {
+            background: #252a30;
+            border: 5px solid #454b54;
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .lamp {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 4px solid #15191e;
+            box-sizing: border-box;
+        }
+
+        .red {
+            background: #521e1e;
+            animation: red-light 14s step-end infinite;
+        }
+
+        .yellow {
+            background: #554718;
+            animation: yellow-light 14s step-end infinite;
+        }
+
+        .green {
+            background: #16432a;
+            animation: green-light 14s step-end infinite;
+        }
+
+        /* Красный: 5 секунд */
+        @keyframes red-light {
+            0%, 35.71% {
+                background: #ff3434;
+                box-shadow: 0 0 25px #ff3434;
+            }
+            35.72%, 100% {
+                background: #521e1e;
+                box-shadow: none;
+            }
+        }
+
+        /* Жёлтый: вместе с красным и в конце */
+        @keyframes yellow-light {
+            0%, 28.56% {
+                background: #554718;
+                box-shadow: none;
+            }
+            28.57%, 35.71% {
+                background: #ffd93d;
+                box-shadow: 0 0 25px #ffd93d;
+            }
+            35.72%, 85.71% {
+                background: #554718;
+                box-shadow: none;
+            }
+            85.72%, 99.99% {
+                background: #ffd93d;
+                box-shadow: 0 0 25px #ffd93d;
+            }
+            100% {
+                background: #554718;
+                box-shadow: none;
+            }
+        }
+
+        /* Зелёный: горит и затем мигает */
+        @keyframes green-light {
+            0%, 35.71% {
+                background: #16432a;
+                box-shadow: none;
+            }
+            35.72%, 64.28% {
+                background: #26e875;
+                box-shadow: 0 0 25px #26e875;
+            }
+            64.29%, 67.85% {
+                background: #16432a;
+                box-shadow: none;
+            }
+            67.86%, 71.42% {
+                background: #26e875;
+                box-shadow: 0 0 25px #26e875;
+            }
+            71.43%, 74.99% {
+                background: #16432a;
+                box-shadow: none;
+            }
+            75%, 78.56% {
+                background: #26e875;
+                box-shadow: 0 0 25px #26e875;
+            }
+            78.57%, 82.13% {
+                background: #16432a;
+                box-shadow: none;
+            }
+            82.14%, 85.71% {
+                background: #26e875;
+                box-shadow: 0 0 25px #26e875;
+            }
+            85.72%, 100% {
+                background: #16432a;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="traffic-light">
+        <div class="lamp red"></div>
+        <div class="lamp yellow"></div>
+        <div class="lamp green"></div>
     </div>
 </body>
 </html>
