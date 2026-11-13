@@ -51,14 +51,17 @@ body{
         background: black;
     
     }
-    75%, 78.56% {
-        background: green;
+    35%, 75.99%{
+        background-color: green;
     }
-    78.57%, 82.13% {
+    75%, 78.56% {
         background: black;
     }
-    82.14%, 85.71% {
+    78.57%, 82.13% {
         background: green;
+    }
+    82.14%, 85.71% {
+        background: black;
     }
     85.72%, 100% {
         background: green;
@@ -68,9 +71,9 @@ body{
     animation: reds 14s step-end infinite;
 }
 
-#yellow{
+#yellows{
     animation: yellows 14s step-end infinite;
 }
-#gren{
+#greens{
     animation: greens 14s step-end infinite;
 }
